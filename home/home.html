@@ -1,0 +1,26 @@
+﻿<h1>Hi <strong>{{ctrl.user.firstName}}</strong>! - You are an Admin</h1>
+<p>You're now logged in!!</p>
+
+<div class="pull-right">
+	<p><a href="#!/create/" class="btn btn-primary">Add New</a></p>
+</div>
+<table class="table table-striped">
+	<thead>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>User Type</th>
+		<th>Email</th>
+		<th>Actions</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in ctrl.allUsers">
+			<td>{{user.firstName}}</td>
+			<td>{{user.lastName}}</td>
+			<td>{{user.userType}}</td>
+			<td>{{user.username}}</td>
+			<td><a href="/#!/update/{{user.id}}">Edit</a>&nbsp;&nbsp;&nbsp;<a ng-click="ctrl.deleteUser(user.id)">Delete</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

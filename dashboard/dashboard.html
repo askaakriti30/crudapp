@@ -1,0 +1,26 @@
+﻿<h1>Hi <strong>{{ctrl.user.firstName}}</strong>! - You are A User</h1>
+<p>You're now logged in!!</p>
+
+
+<div class="pull-right">
+	<p><a href="#!/my-profile/" class="btn btn-primary">Your Profile</a></p>
+</div>
+<h3>All registered users:</h3>
+<table class="table table-striped">
+	<thead>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>User Type</th>
+		<th>Email</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in ctrl.allUsers | filter: { id:'!3' }">
+			<td>{{user.firstName}}</td>
+			<td>{{user.lastName}}</td>
+			<td>{{user.userType}}</td>
+			<td>{{user.username}}</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

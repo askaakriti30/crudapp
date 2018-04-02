@@ -1,0 +1,29 @@
+﻿a {
+    cursor: pointer;
+}
+header {
+	background: #000;
+}
+header h1 {
+    color: #fff;
+    font-size: 23px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+header p {
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+.jumbotron {
+    margin-bottom: 0px;
+    min-height: calc(100vh - 75px);
+}
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 39px;
+}
+footer {
+	background: #111111;
+}
+footer p {
+	color: #fff;
+}
